@@ -7,14 +7,17 @@ console.log(content);
 
 let currentOptionIndex = null;
 
-content.forEach(function (content) {
-    contentsIDs.push(content.id); //right-section içindeki tüm sectionların idsini "contentsIDs" arrayine taşıdık.
-});
-
-console.log(contentsIDs);
-
-ShowMenuItems();
 EventListeners();
+ShowMenuItems();
+ContentID();
+Animations();
+
+function ContentID() {
+    content.forEach(function (content) {
+        contentsIDs.push(content.id); //right-section içindeki tüm sectionların idsini "contentsIDs" arrayine taşıdık.
+    });
+
+}
 function EventListeners() {
     menu.addEventListener("click", getOptionsID)
 }
@@ -53,4 +56,11 @@ function MenuController(optionsID) {
     }
     currentOptionIndex = optionIndex;
     optionItem.style.display = "flex";
+}
+function Animations() {
+    window.addEventListener("load", function () {
+        let socialMediaAnim = document.querySelector(".social-media");
+        socialMediaAnim.classList.add("slide-in");
+    });
+
 }

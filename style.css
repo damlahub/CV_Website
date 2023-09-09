@@ -106,8 +106,12 @@ h3 {
     padding: 25px;
     text-align: center;
     cursor: pointer;
+    font-weight: bolder;
 }
-
+#menu li:hover{
+    animation: shake 1s ease-in-out infinite;
+    color: var(--bordeaux);
+}
 /* Right Section */
 .right-section {
     width: 65%;
@@ -124,6 +128,8 @@ h3 {
     display: flex;
     justify-content: start;
     align-items: center;
+    animation: slide-right  0.5s ease-in-out forwards;
+    z-index: -5;
 }
 
 .title {
