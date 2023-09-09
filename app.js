@@ -1,5 +1,16 @@
 // .show.contents
 let menu=document.querySelector("#menu");
+
+let content=document.querySelectorAll(".right-section > section");
+let contentsIDs=[];
+console.log(content);
+
+content.forEach(function(content) {
+    contentsIDs.push(content.id); //right-section içindeki tüm sectionların idsini "contentsIDs" arrayine taşıdık.
+});
+
+console.log(contentsIDs);
+
 ShowMenuItems();
 EventListeners();
 function EventListeners(){
@@ -29,5 +40,13 @@ function ShowMenuItems() {
 }
 function MenuController(optionsID){
     let optionID=optionsID;
-    console.log(optionID);
+    let optionLength=optionID.length; //ID'nin uzunluğunu aldık.
+    let optionLastChar=optionID.charAt(optionLength-1);// son karakteri aldık. ör: menuItem-0 ise "0" alacak.
+    let optionIndex=parseInt(optionLastChar);
+
+    let optionItem=document.getElementById(contentsIDs[optionIndex]);
+
+    optionItem.style.display="flex";
+
+    console.log(optionItem);
 }

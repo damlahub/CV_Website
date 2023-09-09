@@ -9,7 +9,6 @@
 body {
     background-color: var(--white);
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -152,8 +151,4 @@ h3 {
 
 #about-me img {
     width: 600px;
-}
-
-.show-contents{
-    display: flex;
 }
