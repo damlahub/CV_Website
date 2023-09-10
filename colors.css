@@ -2,9 +2,9 @@
     /* Colors */
     --white: white;
     --black: black;
-    --bordeaux: #642749;
-    --bordeaux-light: #8e365c;
-    --pink: #cd5079;
-    --pink-light: #ff7f9f;
-    --background: #ffb6c9;
+    --dark-green: #092e09;;
+    --dark-green-light: #125b51;;
+    --green: #23aba3;;
+    --green-light: #abdf95;
+    --background: #e5e5b8;
 }

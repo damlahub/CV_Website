@@ -30,7 +30,7 @@ function ShowMenuItems() {
     let items = [
         "Hakkımda",
         "Eğitim Bilgilerim",
-        "İş Deneyimlerim",
+        "Deneyimlerim",
         "Sertifakalarım / Kurslarım",
         "Yeteneklerim",
         "Bana Ulaşın",
