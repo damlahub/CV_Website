@@ -12,6 +12,7 @@
         transform: scaleX(1);
     }
 }
+
 @keyframes slide-right {
     0% {
         -webkit-transform: translateX(-300px);
@@ -23,19 +24,24 @@
         transform: translateX(0);
     }
 }
+
 @keyframes shake {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(10px);
     }
+
     50% {
         transform: translateX(0);
     }
+
     75% {
         transform: translateX(-10px);
     }
+
     100% {
         transform: translateX(0);
     }

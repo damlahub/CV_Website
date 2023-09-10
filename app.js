@@ -1,11 +1,10 @@
-// .show.contents
 let menu = document.querySelector("#menu");
 
 let content = document.querySelectorAll(".right-section > section");
 let contentsIDs = [];
 console.log(content);
 
-let currentOptionIndex = null;
+let currentOptionIndex = 0;
 
 EventListeners();
 ShowMenuItems();
@@ -49,13 +48,14 @@ function MenuController(optionsID) {
     let optionLastChar = optionID.charAt(optionLength - 1);// son karakteri aldık. ör: menuItem-0 ise "0" alacak.
     let optionIndex = parseInt(optionLastChar);
     let optionItem = document.getElementById(contentsIDs[optionIndex]);
-
     if (currentOptionIndex !== null) {
         let currentOptionItem = document.getElementById(contentsIDs[currentOptionIndex]);
         currentOptionItem.style.display = "none";
     }
-    currentOptionIndex = optionIndex;
     optionItem.style.display = "flex";
+    console.log(currentOptionIndex);
+
+    currentOptionIndex = optionIndex;
 }
 function Animations() {
     window.addEventListener("load", function () {
